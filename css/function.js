@@ -1,11 +1,20 @@
+function isAdult(age) {
+  // Change code below this line
+  const passed = age >= 18;
 
-
-function calculateAvarege(...args) {
-  console.log(args)
-
+  // Change code above this line
+  return passed;
 }
 
-calculateAvarege(1, 2, 3)
+console.log(isAdult(28))
+
+
+// function calculateAvarege(...args) {
+//   console.log(args)
+
+// }
+
+// calculateAvarege(1, 2, 3)
 /*
 const obj = {
   name: "user",

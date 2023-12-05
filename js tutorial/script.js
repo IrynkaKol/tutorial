@@ -24,3 +24,22 @@ input.addEventListener('input', onInput)
 function onInput(evt) {
 console.log(evt.target.value)
 }
+
+function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+    let message;
+    // Change code below this line
+  const totalPrice = pricePerDroid * orderedQuantity;
+  
+    if(totalPrice > customerCredits) {
+      message = 'Insufficient funds!'
+    } else {
+      message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`
+    }
+    // Change code above this line
+    return message;
+  }
+  
+  console.log(makeTransaction(5000, 10, 8000))
+//   console.log(checkStorage(25, 30))
+//   console.log(checkStorage(10, 10))
+//   console.log(checkStorage(50, 5))
