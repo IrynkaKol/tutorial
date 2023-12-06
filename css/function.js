@@ -1,12 +1,25 @@
-function isAdult(age) {
-  // Change code below this line
-  const passed = age >= 18;
+// function isAdult(age) {
+//   // Change code below this line
+//   const passed = age >= 18;
 
-  // Change code above this line
-  return passed;
+//   // Change code above this line
+//   return passed;
+// }
+
+// console.log(isAdult(28))
+
+function fib(n) {
+  let a = 0;
+  let b = 1;
+
+  for (let i = 0; i < n; i++) {
+  console.log(a); 
+    b = a + b;
+    a = b - a;
+  }
 }
 
-console.log(isAdult(28))
+(fib(7));
 
 
 // function calculateAvarege(...args) {

@@ -6,40 +6,41 @@ const markup = cats.map(item => `<li><img src="${item}" loading="lazy" alt="cat"
 // Doloremque ut dolor ipsum non illo quibusdam corporis vitae magni eveniet iure. Quia reiciendis sunt dolore delectus quo numquam, ipsa at architecto. Quasi incidunt eum reiciendis tenetur voluptatum sequi cupiditate!
 // Reiciendis vitae aut quibusdam obcaecati consequuntur in aliquam magni molestias deleniti ipsam non laboriosam odio magnam nesciunt, iure fugit est possimus sit porro nobis? Corrupti nostrum nam cumque dolore tempore!
 // Omnis, nesciunt illum quas dolorem, vel recusandae quo corrupti corporis non debitis velit harum, expedita saepe itaque autem beatae earum neque fuga ducimus! Dolorem totam error eaque quia, nisi sit!</p> </li>`).join('');
-list.insertAdjacentHTML('beforeend', markup)
+// list.insertAdjacentHTML('beforeend', markup)
 
-document.addEventListener('scroll', _.debounce(onScroll, 300), {
-    trailing: false,
-    leading: false
+// document.addEventListener('scroll', _.debounce(onScroll, 300), {
+//     trailing: false,
+//     leading: false
 
-})
-let i = 0;
-function onScroll () {
-i+=1
-console.log(i)
-}
+// })
+// let i = 0;
+// function onScroll () {
+// i+=1
+// console.log(i)
+// }
 
-const input = document.querySelector('input');
-input.addEventListener('input', onInput)
-function onInput(evt) {
-console.log(evt.target.value)
-}
+// const input = document.querySelector('input');
+// input.addEventListener('input', onInput)
+// function onInput(evt) {
+// console.log(evt.target.value)
+// }
 
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-    let message;
-    // Change code below this line
-  const totalPrice = pricePerDroid * orderedQuantity;
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//     let message;
+//     // Change code below this line
+//   const totalPrice = pricePerDroid * orderedQuantity;
   
-    if(totalPrice > customerCredits) {
-      message = 'Insufficient funds!'
-    } else {
-      message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`
-    }
-    // Change code above this line
-    return message;
-  }
+//     if(totalPrice > customerCredits) {
+//       message = 'Insufficient funds!'
+//     } else {
+//       message = `You ordered ${orderedQuantity} droids, you have ${customerCredits - totalPrice} credits left`
+//     }
+//     // Change code above this line
+//     return message;
+//   }
   
-  console.log(makeTransaction(5000, 10, 8000))
+//   console.log(makeTransaction(5000, 10, 8000))
 //   console.log(checkStorage(25, 30))
 //   console.log(checkStorage(10, 10))
 //   console.log(checkStorage(50, 5))
+
