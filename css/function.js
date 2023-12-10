@@ -8,18 +8,36 @@
 
 // console.log(isAdult(28))
 
-function fib(n) {
-  let a = 0;
-  let b = 1;
+// Рядок Фібіначі
+// function fib(n) {
+//   let a = 0;
+//   let b = 1;
 
-  for (let i = 0; i < n; i++) {
-  console.log(a); 
-    b = a + b;
-    a = b - a;
+//   for (let i = 0; i < n; i++) {
+//   console.log(a); 
+//     b = a + b;
+//     a = b - a;
+//   }
+// }
+
+// (fib(7));
+
+function fib (n) {
+  console.log('start');
+  let a, b;
+  
+  a = 0;
+b = 1;
+while (b < n) {
+b+=a;
+console.log(a);
+a = b-a;
+  
   }
-}
-
-(fib(7));
+  
+  }
+  
+  fib(15);
 
 
 // function calculateAvarege(...args) {
